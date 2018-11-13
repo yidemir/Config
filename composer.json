@@ -1,0 +1,29 @@
+{
+    "name": "yidemir/config",
+    "description": "Tiny configuration management in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yılmaz Demir",
+            "email": "demiriy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Demir\\Config\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox --colors=always tests"
+    }
+
+}
